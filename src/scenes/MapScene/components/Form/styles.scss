@@ -1,0 +1,51 @@
+@media screen and (orientation: portrait){
+    .form-inner {
+        height: 45%;
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape){
+    .form-inner {
+        height: 100%;
+        width: 80%;
+    }
+}
+
+@keyframes dropDown {
+    to {
+        bottom: 10%;
+    }
+}
+
+form {
+    height: 70%;
+    width: 65%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-inner {
+    padding: 8px;
+    height: 100%;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow:auto;
+}
+
+div.form-container {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: dropDown 2s;
+    animation-fill-mode: forwards;
+}
